@@ -1,6 +1,6 @@
 import discord 
+token = 'INSERT DISCORD BOT TOKEN HERE'
 client = discord.Client()
-token = ''
 
 @client.event
 async def on_ready():
@@ -14,11 +14,20 @@ async def on_message(message):
     if message.content.startswith('~test'):
         await message.channel.send('Hi')
 
-    elif message.content.startswith('~test2'):
-        await message.channel.send('test2: ')
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
     
-    elif message.content.startswith('~test3'):
-        await message.channel.send('test3: ')
+    if message.content.startswith('~test2'):
+        await message.channel.send('hello test2')
 
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+    
+    if message.content.startswith('~test3'):
+        await message.channel.send('hello test3')
 
 client.run(token)

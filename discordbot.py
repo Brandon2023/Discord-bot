@@ -14,13 +14,11 @@ async def on_message(message):
     if message.content.startswith('~test'):
         await message.channel.send('Hi')
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-
-    if message.content.startswith('~test2'):
-        await message.channel.send('Here is a list of commands: ')
+    elif message.content.startswith('~test2'):
+        await message.channel.send('test2: ')
+    
+    elif message.content.startswith('~test3'):
+        await message.channel.send('test3: ')
 
 
 client.run(token)

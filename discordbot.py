@@ -1,4 +1,5 @@
 import discord 
+
 token = 'INSERT DISCORD BOT TOKEN HERE'
 client = discord.Client()
 

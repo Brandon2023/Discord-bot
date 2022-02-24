@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("Bot has connected to discord!")
+    print("Bot has connected to discord")
 
 @client.event
 async def on_message(message):

@@ -20,10 +20,8 @@ async def help(ctx):
     await ctx.send("")
 
 @client.command()
-async def thefunny(ctx):
-    while True: 
-        time.sleep(2)
-        await ctx.send("@everyone")   
+async def idk(ctx):
+   
 
 
 

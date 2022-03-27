@@ -2,7 +2,7 @@ import discord
 import time
 from discord.ext import commands
 
-token = 'OTQ1ODQwMjM0MDQ0NzM5NTk1.YhWAXA.wDIXnMluro1tY71sNK8vmQHOWzU'
+token = ''
 client = discord.Client()
 
 client = commands.Bot(command_prefix='$')
